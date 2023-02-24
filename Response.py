@@ -2,7 +2,7 @@
 import streamlit as st
 import os
 import openai
-openai.api_key = (st.secrets["OPENAI_API_KEY"])
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 st.header("Hotel AI-Customer Service")
 review = st.text_area("Enter Customer Review")
