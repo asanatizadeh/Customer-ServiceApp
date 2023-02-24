@@ -2,7 +2,7 @@
 import streamlit as st
 import os
 import openai
-openai.api_key = os.getenv("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")
+openai.api_key = os.getenv("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")
 
 st.header("Hotel AI-Customer Service")
 review = st.text_area("Enter Customer Review")
