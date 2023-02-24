@@ -11,7 +11,7 @@ button = st.button("Generate Reply")
 def generate_repy(review):
   response = openai.Completion.create(
     model="text-davinci-003",
-    prompt= f"write a reply to the give review. If the customer has any concers, address them. \n\nReview: {review}\n\nreply:",
+    prompt= f"write a reply to the give review. If the customer has any concers, address them. ",
     temperature=0.7,
     max_tokens=256,
     top_p=1,
