@@ -16,7 +16,7 @@ def generate_repy(review):
     max_tokens=256,
     top_p=1,
     frequency_penalty=0,
-    presence_penalty=0
+    presence_penalty=0,
     stop: None
   )
   return response.choices[0].text
